@@ -1,0 +1,40 @@
+﻿using Microsoft.IdentityModel.Tokens;
+using System;
+using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TestingWebPortal.Service
+{
+    public class JwtService
+    {
+        private string securetyKey = "_jaAyEMSJJhCRaNs4xuSFfdrb7hcWn7qpXa5jH7car60p5hPXAxSvlKd3qv3ZwK853R8NYgHjYqMezUy91Q3TwW5zkx6rn_hxW-HaX-naFezjzrRqP";
+
+        public string Generate(int id)
+        {
+            var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(securetyKey));
+            var credentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256Signature);
+            var header = new JwtHeader(credentials);
+            var payload = new JwtPayload(id.ToString(), null, null, null, DateTime.Today.AddDays(1));
+
+            var securityToken = new JwtSecurityToken(header, payload);
+
+            return new JwtSecurityTokenHandler().WriteToken(securityToken);
+        }
+        public JwtSecurityToken Verify(string jwt)
+        {
+            var tokenHendler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(securetyKey);
+            tokenHendler.ValidateToken(jwt, new TokenValidationParameters
+            {
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateIssuerSigningKey = true,
+                ValidateIssuer = false,
+                ValidateAudience = false,
+            }, out SecurityToken validateToken);
+            return (JwtSecurityToken)validateToken;
+        }
+    }
+}
