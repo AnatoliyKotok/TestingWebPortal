@@ -30,6 +30,12 @@ namespace TestingWebPortal.Controllers
             };
             return Created("Question successful created.", _testReposetory.AddTest(test));
         }
+        [HttpDelete("delete-test")]
+        public IActionResult DeleteTestById(int id)
+        {
+            _testReposetory.DeleteTest(id);
+            return Ok();
+        }
         [HttpGet("Get-All-Tests")]
         public IActionResult GetAllTests()
         {

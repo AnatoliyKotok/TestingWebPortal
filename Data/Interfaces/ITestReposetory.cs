@@ -9,6 +9,7 @@ namespace TestingWebPortal.Data.Interfaces
     public interface ITestReposetory
     {
         Test AddTest(Test test);
+        void DeleteTest(int Id);
         List<Test> GetAllTest();
     }
 }

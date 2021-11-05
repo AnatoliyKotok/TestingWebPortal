@@ -23,6 +23,13 @@ namespace TestingWebPortal.Data.Reposetorys
             return _test;
         }
 
+        public void DeleteTest(int Id)
+        {
+            var test = _context.Tests.FirstOrDefault(t => t.Id == Id);
+            _context.Tests.Remove(test);
+            _context.SaveChanges();
+        }
+
         public List<Test> GetAllTest()
         {
             _context.Answers.ToList();

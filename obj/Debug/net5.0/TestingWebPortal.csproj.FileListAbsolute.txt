@@ -123,7 +123,6 @@ C:\Users\anato\Downloads\TestingWebPortal-master\TestingWebPortal-master\Testing
 C:\Users\anato\Downloads\TestingWebPortal-master\TestingWebPortal-master\TestingWebPortal\obj\Debug\net5.0\ref\TestingWebPortal.dll
 C:\Users\anato\Downloads\TestingWebPortal-master\TestingWebPortal-master\TestingWebPortal\obj\Debug\net5.0\TestingWebPortal.pdb
 C:\Users\anato\Downloads\TestingWebPortal-master\TestingWebPortal-master\TestingWebPortal\obj\Debug\net5.0\TestingWebPortal.genruntimeconfig.cache
-C:\Users\anato\source\repos\TestingWebPortal-master\TestingWebPortal-master\TestingWebPortal\obj\Debug\net5.0\TestingWebPortal.csproj.AssemblyReference.cache
 C:\Users\anato\source\repos\TestingWebPortal-master\TestingWebPortal-master\TestingWebPortal\obj\Debug\net5.0\TestingWebPortal.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\anato\source\repos\TestingWebPortal-master\TestingWebPortal-master\TestingWebPortal\obj\Debug\net5.0\TestingWebPortal.AssemblyInfoInputs.cache
 C:\Users\anato\source\repos\TestingWebPortal-master\TestingWebPortal-master\TestingWebPortal\obj\Debug\net5.0\TestingWebPortal.AssemblyInfo.cs
@@ -185,3 +184,7 @@ C:\Users\anato\source\repos\TestingWebPortal-master\TestingWebPortal-master\Test
 C:\Users\anato\source\repos\TestingWebPortal-master\TestingWebPortal-master\TestingWebPortal\obj\Debug\net5.0\scopedcss\bundle\TestingWebPortal.styles.css
 C:\Users\anato\source\repos\TestingWebPortal-master\TestingWebPortal-master\TestingWebPortal\obj\Debug\net5.0\TestingWebPortal.RazorTargetAssemblyInfo.cache
 C:\Users\anato\source\repos\TestingWebPortal-master\TestingWebPortal-master\TestingWebPortal\obj\Debug\net5.0\TestingWebPortal.genruntimeconfig.cache
+C:\Users\anato\source\repos\TestingWebPortal-master\TestingWebPortal-master\TestingWebPortal\bin\Debug\net5.0\client-app\package-lock.json
+C:\Users\anato\source\repos\TestingWebPortal-master\TestingWebPortal-master\TestingWebPortal\bin\Debug\net5.0\client-app\package.json
+C:\Users\anato\source\repos\TestingWebPortal-master\TestingWebPortal-master\TestingWebPortal\bin\Debug\net5.0\client-app\public\manifest.json
+C:\Users\anato\source\repos\TestingWebPortal-master\TestingWebPortal-master\TestingWebPortal\obj\Debug\net5.0\TestingWebPortal.csproj.CopyComplete
